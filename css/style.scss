@@ -1,0 +1,1802 @@
+/*Start glopal classes*/
+@font-face {
+	font-family: 'proxima-rgular';
+	src: url('../fonts/Proxima\ Nova\ Regular.otf');
+}
+@font-face{
+  font-family: 'proxima-bold';
+  src: url('../fonts/Proxima Nova Bold.otf');
+}
+@font-face{
+  font-family: 'proxima-semi-bold';
+  src: url('../fonts/Proxima\ Nova\ Semibold.otf');
+}
+@font-face {
+	font-family: 'gothic-bold';
+	src: url('../fonts/GOTHICB_bold.TTF');
+}
+@font-face {
+	font-family: 'gothic-rgular';
+	src: url('../fonts/GOTHIC_0.TTF');
+  font-weight:normal
+}
+@font-face {
+	font-family: 'opensans-rgular';
+	src: url('../fonts/OpenSans-Regular.ttf');
+  font-weight: normal
+}
+@font-face {
+	font-family: 'opensans-semibold';
+	src: url('../fonts/OpenSans-Semibold.ttf');
+}
+@font-face {
+	font-family: 'opensans-bold';
+	src: url('../fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+	font-family: 'popins-bold';
+	src: url('../fonts/Poppins-Bold.ttf');
+}
+$main-color:#c9263a;
+$sec-color:#da3247;
+$bg-color:#0e76bc;
+
+/*End glopal classes*/
+/*Start Homepage*/
+/*Start Upper-bar*/
+.upper-bar
+{
+ font-family:'prxima-rgular';
+ background-color: $sec-color;
+ color: #fffefe;
+ padding: 5px 2px;
+ margin-bottom: 25px;
+ .language
+ {
+	 .fa
+	 {
+		 background-color: $main-color;
+		 margin-right: 20px;
+		 height: 40px;
+		 width: 40px;
+		 line-height:40px;
+		 text-align: center;
+		 cursor: pointer;
+     margin-bottom: 20px;
+     margin-top: 10px
+	 }
+ }
+ .setting-panel
+ {
+  span
+  {
+   margin-right: 20px;
+   line-height: 45px;
+   cursor: pointer;
+   a 
+   {
+    text-decoration: none;
+    color: #FFF
+   }
+  }
+  .bold
+  {
+   font-family: 'proxima-bold';
+   background-color: $main-color;
+   height: 40px;
+   width: 40px;
+   line-height: 40px;
+   padding: 10px 8px;
+   border-radius:3px;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   -ms-border-radius:3px;
+   -o-border-radius:3px;
+  }
+  @media(max-width:990px)
+ {
+   margin: auto;
+   text-align: center;
+ }
+ }
+ @media(min-width:768px)and(max-width:991px)
+ {
+  font-size: 11px;
+  font-weight:bold
+ }
+}
+/*Start Upper-bar*/
+/*Start Navbar Section*/
+.navbar 
+{
+  cursor: pointer;
+ .navbar-brand
+ {
+  img
+  {
+   width: 300px;
+  } 
+ }
+ .navbar-nav
+  {
+   margin-left: 25px;
+   @media(min-width:992px) and (max-width:1199px)
+   {
+    margin-left: 15px
+   }
+   li 
+   {
+	  font-family: 'proxima-rgular';
+    .nav-link
+    {
+     @media(min-width:992px) and (max-width:1199px)
+     {
+      font-size: 13px;
+      font-weight: bold;
+     }
+    }
+   }
+   .active
+   {
+    .nav-link
+    {
+      color: $main-color;
+      font-weight: bold;
+       @media(min-width:992px) and (max-width:1199px)
+     {
+      font-size: 13px;
+      font-weight: bold;
+     }
+    }
+   }
+  }
+}
+/*End Navbar Section*/
+/*Start Greeting Section*/
+.greeting
+{
+ background-image: url("../images/home/banner.jpg");
+ background-size: cover;
+ background-position: right;
+ background-repeat: no-repeat;
+ height: 500px;
+ padding: 50px 0;
+ @media(min-width:480px)and(max-width:767px)
+ {
+  padding: 35px 0
+ }
+ h1 
+ {
+  font-family: 'popins-bold';
+  color: $bg-color;
+  text-align: left;
+  width: 50%;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  position: relative; 
+  @media(max-width:480px)
+  {
+    font-size: 25px;
+    width: 100%;
+    text-align: center
+  }
+  @media(min-width:480px)and(max-width:767px)
+  {
+    font-size: 26px
+  }
+  @media(min-width:768px)and(max-width:990px)
+  {
+    font-size: 30px
+  }
+  &::after
+  {
+   position:absolute;
+   bottom:-10px;
+   left: 0;
+   content: "";
+   width: 63px;
+   height: 2px;
+   background-color: $main-color;
+  }
+ }
+ .features
+ {
+  li 
+  {
+	width: 100%;
+	margin-bottom: 15px;
+	font-family: 'proxima-semi-bold';
+  @media(max-width:480px)
+  {
+    font-size: 15px;
+    width: 100%;
+    text-align: left;
+  }
+  @media(min-width:768px)and(max-width:990px)
+  {
+    font-size: 15px;
+    width: 100%
+  }
+	.fa
+	{
+   color: $main-color;
+	 margin-right: 20px;
+	}
+  }
+ }
+ button
+ {
+  background-color: $main-color;
+  color: #FFF;
+  padding: 10px 25px;
+  border: none;
+  font-family: 'gothic-bold';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+ }
+}
+/*End Greeting Section*/
+/*Start testimonial Section*/
+.testimonial
+{
+ background-color: $bg-color;
+ color: #FFF;
+ padding: 30px 15px;
+ margin-top: -19px;
+ margin-bottom: 40px;
+ @media (max-width:479px)
+  {
+   text-align: center
+  }
+ @media(min-width:480px) and (max-width:767px)
+ {
+   text-align: center
+ }
+ .img-1
+ {
+  position: absolute;
+  top: -15px;
+  left: -25px;
+  @media(max-width:479px)
+  {
+    top: -8px;
+    left: 6px;
+  }
+  @media(min-width:480px) and (max-width:767px)
+  {
+    left: 12px;
+  }
+ }
+ p
+ {
+   font-size: 20px;
+   color: #FFF ;
+   text-align: left;
+   position: relative;
+   font-family: 'proxima-rgular';
+   @media (max-width:479px)
+   {
+     font-size: 13px;
+     text-align: center;
+     width: 94%;
+     margin-top: 10px
+   }
+   @media(min-width:480px) and (max-width:767px)
+   {
+     font-size: 15px;
+     width: 90%;
+     text-align: center;
+   }
+    @media(min-width:768px) and (max-width:991px)
+   {
+    font-size: 16px;
+    text-align: center;
+    margin-left: 20px;
+   }
+   @media(min-width:992px) and (max-width:1199px)
+  {
+   font-size: 18px
+  }
+ }
+ .img-2
+ {
+  position: absolute;
+  top: 55px;
+  right: 250px;
+   @media(max-width:479px)
+  {
+    top: 68px;
+    right: 135px;
+  }
+  @media(min-width:480px) and (max-width:767px)
+  {
+    top: 66px;
+    right:185px ;
+  }
+  @media(min-width:768px) and (max-width:991px)
+  {
+    right: 164px;
+  }
+  @media(min-width:992px) and (max-width:1199px)
+  {
+   right: 65px;
+  }
+ }
+ h6 
+ {
+  font-family: 'proxima-semi-bold';
+  margin-bottom: 1px;
+  @media(min-width:768px) and (max-width:991px)
+  {
+    margin-left: 20px
+  }
+ }
+ span 
+ {
+   font-family: 'proxima-rgular'; 
+   @media(min-width:768px) and (max-width:991px)
+  {
+    margin-left: 20px
+  }
+ }
+}
+/*Start testimonial Section*/
+/*Start Features Section*/ 
+.features
+{
+ img 
+ {
+  max-width: 100%;
+ }
+ .feat-box
+ {
+   padding: 20px 0;
+   h2 
+   {
+    font-family: 'gothic-bold';
+    color: #3f3f3f;
+    position: relative;
+    margin-bottom: 25px;
+    @media(min-width:768px) and (max-width:991px)
+    {
+      font-size: 20px
+    }
+    @media(min-width:992px) and (max-width:1199px)
+    {
+      font-size: 25px
+    }
+    &::after
+    {
+    position:absolute;
+    bottom:-7px;
+    left: 15px;
+    content: "";
+    width: 63px;
+    height: 2px;
+    background-color: $main-color;
+    }
+   }
+   p 
+   {
+    font-family: 'gothic-bold';
+    color: #847e7e;
+   }
+ }
+ ul 
+ {
+  li 
+  {
+    font-family: 'gothic-rgular';
+    margin-bottom: 15px;
+    font-size: 14px;
+    @media(min-width:992px) and (max-width:1199px)
+    {
+     margin-bottom: 12px;
+     font-size: 11px;
+     font-weight: bold;
+     }
+    .fa
+    {
+     color: $main-color;
+     margin-right: 17px;
+    }
+  }
+ }
+}
+/*End Features Section*/ 
+/*Start Special Offer*/
+.special-offer
+{
+  background-image: url("../images/home/special-offer-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 280px;
+  color: #FFF;
+  padding: 25px 0;
+  @media (max-width:519px)
+  {
+    height: 360px;
+    padding: 35px 0
+  }
+  @media(min-width:520px) and (max-width:767px)
+  {
+    height: 330px;
+    padding: 35px 0
+  }
+  .offer
+  {
+    h2 
+    {
+     font-family: 'gothic-bold';
+     color: #FFF;
+     margin-bottom: 25px;
+     position: relative;
+     
+     @media(min-width:768px) and (max-width:991px)
+    {
+     margin-bottom: 15px
+    }
+     &::after 
+     {
+      position:absolute;
+      bottom:-7px;
+      left: 46%;
+      content: "";
+      width: 63px;
+      height: 3px;
+      background-color:#FFF 
+     }
+    }
+    p 
+    {
+     font-family: 'gothic-rgular';
+     font-size: 19px;
+     span 
+     {
+      font-family: 'gothic-bold';
+      margin-right: 1px;
+     }
+    }
+    span 
+    {
+     font-family: 'gothic-rgular';
+     margin-left: 10px;
+     margin-right: 10px;
+    }
+    .sec
+    {
+     margin-top: 10px;
+    }
+    button:first-of-type 
+    {
+      font-family: 'popins-bold';
+      background-color: $main-color;
+      color: #FFF;
+      padding: 9px 17px;
+      border-radius:3px;
+      -webkit-border-radius:3px;
+      -moz-border-radius:3px;
+      -ms-border-radius:3px;
+      -o-border-radius:3px;
+      border: none
+
+    }
+    button:last-of-type 
+    {
+     font-family: 'popins-bold';
+     background-color: #FFF;
+     color: $main-color;
+     padding: 9px 17px;
+     border-radius:3px;
+     -webkit-border-radius:3px;
+     -moz-border-radius:3px;
+     -ms-border-radius:3px;
+     -o-border-radius:3px;
+     border: none;
+     margin-left: 16px;
+    }
+  }
+}
+/*End Special Offers*/ 
+/*Strat request-a-quote*/ 
+.request-quote
+{
+  background-color: #f5f5f5;
+  padding: 40px 0;
+  h2 
+  {
+   font-family: 'gothic-bold';
+   color: #3f3f3f;
+   margin-bottom: 30px;
+  }
+  .text
+  {
+  position: relative;
+  input[type="text"]
+  {
+   width: 80%;
+   height: 45px;
+   padding-left: 50px;
+   margin-bottom: 25px;
+   border: 1px solid #e4dddd;
+   }
+    &::before
+   {
+    position: absolute;
+    top: 13px;
+    left: 40px;
+    content: "";
+    height: 22px;
+    width: 2px;
+    background-color:#b2b5b7; 
+   }
+   img 
+   {
+     position: absolute;
+   }
+   .one 
+   {
+     position: absolute;
+     top: 13px;
+     left: 6px;
+   }
+   .two 
+   {
+     position: absolute;
+     top: 16px;
+     left: 9px;
+   }
+   .three 
+   {
+     position: absolute;
+     top: 13px;
+     left: 9px;
+   }
+  }
+  .idusrty
+  {
+    position: relative;
+    .form-control 
+    {
+     width:80%!important;
+     height: 45px;
+     margin-bottom: 25px;
+     padding-left: 45px;
+    }
+    &::before
+   {
+    position: absolute;
+    top: 13px;
+    left: 40px;
+    content: "";
+    height: 22px;
+    width: 2px;
+    background-color:#b2b5b7; 
+   }
+   img 
+   {
+    position: absolute;
+    top: 10px;
+    left: 6px;
+   }
+  }
+  .usage
+  {
+    position: relative;
+    .form-control 
+    {
+     width:80%!important;
+     height: 45px;
+     margin-bottom: 25px;
+     padding-left: 45px
+    }
+    &::before
+   {
+    position: absolute;
+    top: 11px;
+    left: 40px;
+    content: "";
+    height: 22px;
+    width: 2px;
+    background-color:#b2b5b7; 
+   }
+   img 
+   {
+    position: absolute;
+    top: 10px;
+    left: 6px;
+   }
+  }
+  button 
+  {
+   background-color: $main-color;
+   color: #FFF;
+   border: none;
+   text-transform: uppercase;
+   padding: 11px 50px;
+   font-family: 'gothic-bold';
+   cursor: pointer;
+   .fa
+   {margin-left: 10px}
+  } 
+}
+/*End request-a-quote*/ 
+/*Start Testimonials Section*/ 
+.testimonials
+{
+ #exampleSlider
+ {
+  border: none;
+  .MS-content 
+  {
+    border: none;
+    .item
+    {
+     width: 25%;
+     height: 200px;
+     margin-right:.25%;
+     border: 2px solid #EEE;
+     padding: 15px 9px;
+     @media(max-width:479px)
+     {
+       width: 100%;
+       text-align: center
+     }
+     @media(min-width:480px)and(max-width:991px)
+     {
+      width: 50%
+     }
+     @media(min-width:992px)and(max-width:1199px)
+     {
+      width: 30%
+     }
+     .rate
+     {
+      display: inline;
+      text-align: left;
+      margin-right: 20%;
+     }
+     span:first-of-type 
+     {
+      display: inline;
+      text-align: right;
+      font-family: 'opensans-semibold';
+      color: #bbbbbb
+     }
+     h4 
+     {
+      font-family: 'opensans-bold';
+      font-size: 16px;
+      margin-top: 10px
+     }
+     p 
+     {
+      font-family: 'opensans-rgular';
+      word-wrap: break-word;
+      font-size: 14px;
+      line-height: 1.2;
+      text-align: left;
+      color: #6b6b6b;
+      margin-bottom: 25px
+     }
+     span:last-of-type
+     {
+      color: #847e7e;
+      font-family: 'opensans-semibold';
+     }
+    }
+  }
+  .MS-controls
+  {
+   .fa 
+   {color: #EEE}
+  }
+ }
+ .rated
+ {
+  font-family: 'opensans-rgular'; 
+  .cammel
+  {
+    color: #cc8048;
+    font-family: 'opensans-semibold';
+    margin-left: 2px;
+    margin-right: 10px
+  } 
+ }
+ .info 
+ {
+   font-family: 'opensans-rgular';
+   color: #847e7e;
+   margin-top: 30px;
+   margin-bottom: 35px;
+ }
+}
+/*End Testimonials Section*/ 
+/*Footer Section*/
+footer 
+{
+  background-color: $bg-color;
+  color: #FFF;
+  padding: 30px 0;
+  overflow: hidden;
+  img 
+  {
+   float: left;
+   margin-right: 16px;
+   margin-top: 10px;
+  }
+  h5 
+  {
+   font-family: 'gothic-bold';
+   font-size: 15pt;
+   color: #7bb0dd;
+  }
+  p 
+  {
+   color: #7bb0dd;
+   font-family: 'gothic-rgular';
+  }
+} 
+/*End Footer Section*/ 
+/*Copyright Section*/
+.copy
+{
+  background-color: #076bb0;
+  height:50px;
+  line-height: 50px;
+  padding: 0;
+  span 
+  {
+   color: #7bb0dd;
+   font-family: 'gothic-rgular';
+  }
+}
+/*End Copyright Section*/ 
+/*End Homepage*/
+/*Start our-story Page*/
+.our-story
+{
+  background-image: url("../images/story/banner.jpg");
+  height:160px;
+  background-size: cover;
+  background-position: right;
+  margin-bottom: 30px;
+  h3 
+  {
+   font-family: 'popins-bold';
+   color: $bg-color;
+   font-size: 39px; 
+   line-height: 160px 
+  }
+} 
+.about-story
+  {
+   .story 
+   {
+    img 
+    {
+     max-width: 100%;
+    }
+   h3 
+   {
+    font-family: 'gothic-bold';
+    font-size: 30pt;
+    margin-bottom: 40px;
+    position: relative;
+    &::after
+    {
+    position:absolute;
+    bottom:-20px;
+    left: 0;
+    content: "";
+    width: 63px;
+    height: 3px;
+    background-color: $main-color;
+    }
+   }
+   p:first-of-type
+   {
+    font-family: 'gothic-bold';
+    font-size: 17pt;
+   }
+   p:nth-of-type(2)
+   {
+    font-family: 'gothic-rgular';
+    color: #888181;
+    line-height: 1.8
+   }
+   p:first-child
+   {
+    font-family: 'gothic-rgular';
+    color: #888181;
+    line-height: 1.8;
+   }
+   }
+  }
+/*End our-story Page*/ 
+/*Start Specialities Page*/ 
+.categories
+{
+  padding: 45px 0;
+  select
+  {
+   width: 30%;
+   display: inline-block;
+   padding-left: 25px;
+   font-family: 'proxima-rgular';
+   margin-bottom: 45px;
+   height: 45px;
+  }
+  input[type="submit"]
+  {
+   background-color: $main-color;
+   color: #FFF;
+   height: 45px;
+   border: none;
+   width: 60px;
+   font-family: 'opensans-semibold';
+   text-transform: uppercase
+  }
+  .category
+  {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    position: relative;
+    @media(max-width:767px)
+    {
+      text-align: center
+    }
+    img 
+    {
+     max-width: 100%;
+     margin-bottom: 15px
+    }
+    h5 
+    {
+     font-family: 'gothic-bold';
+     font-size: 16pt;
+     text-align: center
+    }
+    .overlay
+    {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(14, 118, 188, .6);
+      color: #EEE;
+      padding: 50px 10px;
+      text-align: center;
+      cursor: pointer;
+      border-radius:3px;
+      -webkit-border-radius:3px;
+      -moz-border-radius:3px;
+      -ms-border-radius:3px;
+      -o-border-radius:3px;
+      transition:3s ease-in-out all;
+      -webkit-transition:3s ease-in-out all;
+      -moz-transition:3s ease-in-out all;
+      -ms-transition:3s ease-in-out all;
+      -o-transition:3s ease-in-out all;
+      display: none;
+      @media(max-width:767px)
+      {
+       text-align: center;
+       margin: auto;
+      }
+      p 
+      {
+       font-family: 'proxima-rgular';
+       font-size: 13pt
+      }
+    }
+    &:hover
+    {
+     .overlay{display: block;}
+    }
+  }
+}
+/*End Specialities Page*/ 
+/*Start Contact Us Page*/ 
+.our-address
+{
+  padding: 20px 0;
+  margin-bottom: 30px;
+  h2 
+  {
+   text-align: left;
+   font-family: 'gothic-bold';
+   margin-bottom: 40px;
+   color: #3f3f3f;
+  }
+  img 
+  {
+   margin-bottom: 40px
+  }
+  .office
+    {
+      background-color: $bg-color;
+      color: #FFF;
+      padding: 7px 11px;
+      text-align: right;
+      margin-bottom: 1px;
+      h5 
+      {
+       font-family: 'gothic-rgular';
+       display: inline-block;
+      }
+      .fa 
+      {
+       display: inline-block;
+       margin-left:250px;
+      }
+    }
+  .offer 
+  {
+    border: 1px solid #ebebeb;
+    padding: 24px 6px;
+    .block 
+    {
+      border: 1px solid #ebebeb;
+      padding: 10px 11px;
+      font-family: 'gothic-rgular';
+      text-align: center;
+      @media(min-width:992px)
+      {
+        padding: 10px 2px;
+      }
+      ul 
+      {
+        li 
+        {
+         margin-bottom: 20px;
+         @media(min-width:992px)
+         {
+           font-size: 13px
+         }
+         @media(max-width:767px)
+         {
+           font-size: 13px
+         }
+         span 
+         {
+          color: $main-color;
+          margin-right: 20px;
+         }
+        }
+      }
+    }
+  }
+  .work-hours
+  {
+    h3 
+    {
+     font-family: 'gothic-bold';
+     margin-bottom: 25px;
+    }
+    p 
+    {
+     font-family: 'gothic-rgular';
+     span 
+     {
+      color: $main-color;
+      margin-right: 20px;
+     }
+    }
+    button 
+    {
+     background-color: $main-color;
+     color: #FFF;
+     border: none;
+     padding: 15px 20px;
+     font-family: 'popins-bold';
+     text-transform: uppercase
+    }
+  }
+}
+.contact
+{
+  background: #f5f5f5;
+  padding: 40px 0;
+  select 
+  {
+   width: 50%;
+   margin-bottom: 25px
+  }
+  input[type="text"]
+  {
+  margin-bottom: 25px
+  }
+   input[type="email"]
+  {
+   margin-bottom: 25px
+  }
+  textarea 
+  {
+   margin-bottom: 15px;
+  }
+  button[type="submit"]
+  {
+   background-color: $main-color;
+   color: #FFF;
+   border: none;
+   padding: 11px 30px;
+   position: relative;
+   .fa
+   {margin-left: 10px}
+  }
+}
+
+/*End Contact Us Page*/
+/*ٍstart special-offers*/
+.products
+{
+  background-color: #f6f6f6;
+  padding: 30px 0;
+  position: relative;
+  .product 
+  {
+    background-color: #FFF;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    img 
+    {
+      max-width: 100%;
+    }
+    h3 
+    {
+     color: $main-color;
+     font-family: 'gothic-bold';
+     font-size: 21px;
+    }
+    p 
+    {
+     color: #ada2a2;
+     font-family: 'proxima-rgular';
+     line-height: 1.8;
+    }
+    h5 
+    {
+     color: #555;
+     font-family: 'proxima-semi-bold'; 
+     .expiration
+     {
+       font-family: 'proxima-rgular';
+       margin-right:10px;
+       color: #ada2a2
+     }
+    }
+  }
+  .product.special
+  {
+    position: relative;
+    height: auto;
+     .special-img 
+    {
+     position: absolute;
+     top: 0;
+     left: 0;
+
+    }
+  }
+} 
+/*End special-offers*/ 
+/*Start FAQ Page*/ 
+.faq 
+{
+  .block 
+  {
+     overflow: hidden;
+     margin-top: 15px;
+     margin-bottom: 25px;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     .discribtion
+     {
+      background-color:#f8f8f8;
+      padding: 25px 4px;
+      height: 160px;
+       img 
+      {
+      float: left;
+      border:4px solid #FFF;
+      width: 32%;
+      margin-bottom: 15px;
+      margin-right: 3%;
+      }
+      h3 
+      {
+        float: left;
+        font-family: 'proxima-semi-bold'; 
+        width: 65%;
+        font-size: 30px;
+        margin-top: 10px;
+      }
+     }
+     .accordion
+     {
+      .card 
+      {
+      .card-header
+        {
+          background-color: #fff9fa;
+          padding: 5px;
+          h6 
+          {
+            text-align: left;
+            .btn-link
+             {
+               color: #555;
+              .fa-plus
+              {
+                color: $main-color;
+                margin-left: 95px
+              }
+               .minus
+              {
+              .fa-plus::before
+              {
+                content: "\f068";
+              }
+              }
+             }
+
+          }
+        }
+      }
+      .view-more
+      {
+        border: 1px solid #dacfcf;
+        a 
+        {
+          color: $main-color;
+          text-decoration: none;
+          h6 
+          {
+            margin-top: 10px;
+            margin-bottom: 1px;
+          }
+          i 
+          {
+           font-size: 18px;
+          }
+          &:hover 
+          {text-decoration: none}
+        }
+      }
+     }
+  }
+}
+/*End FAQ Page*/ 
+/*Start Client & Reviews Page*/ 
+.tabs
+{
+  .featured-clients
+  {
+   background-color: #e6e6e6;
+   padding: 10px 6px;
+   display: inline-block;
+   margin-right: 20px;
+   margin-bottom: 20px;
+   height: 55px;
+   cursor: pointer;
+   img 
+   {
+     display: inline-block;
+   }
+   h6 
+   {
+     display: inline-block;
+     font-family: 'proxima-semi-bold'; 
+     margin-left: 3px
+   }
+   &:hover 
+   {
+    background-color: $main-color;
+    color: #FFF;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+    transition-delay: .1s
+   }
+  }
+  .rating
+  {
+   background-color: #e6e6e6;
+   padding: 15px 6px;
+   display: inline-block;
+   margin-bottom: 20px;
+   cursor: pointer;
+   height: 55px;
+   img 
+   {
+     display: inline-block;
+
+   }
+   h6 
+   {
+     display: inline-block;
+     font-family: 'proxima-semi-bold'; 
+     margin-left: 3px
+   }
+   &:hover 
+   {
+    background-color: $main-color;
+    color: #FFF;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+    transition-delay: .1s;
+  }
+  }
+  .tab-active
+  {
+    background-color: $main-color;
+    color: #FFF;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+  }
+}
+/*Start Faetured-Reviews Section*/ 
+.featured-reviews
+{
+  .review-body
+  {
+    img 
+    {
+     margin-right: 20px;
+    }
+    .client-details
+    {
+      h3 
+      {
+       font-family: 'gothic-bold';
+      }
+      p 
+      {
+       font-family: 'proxima-rgular';
+       color: #847e7e
+      }
+    }
+    p 
+    {
+     font-family: 'proxima-rgular';
+     color: #847e7e
+    }
+    .client
+    {
+      margin-top: 25px;
+      margin-bottom: 40px;
+      border: 1px solid $main-color;
+      padding: 15px 6px;
+      img 
+      {
+        margin-right: 20px;
+      }
+      .about-client
+      {
+       h6 
+       {
+        font-family: 'proxima-bold';
+        margin-bottom: 3px;
+        span 
+        {color: $main-color}
+       }
+       q 
+       {
+         font-family: 'proxima-rgular';
+         font-size: 15px;
+         font-style: italic;
+
+       }
+      }
+    }
+  }
+}
+/*End Faetured-Reviews Section*/
+/*Start Clients-Reviews Section*/ 
+.clients-rating 
+{
+  .list 
+  {
+   li 
+   {
+    border: 1px solid #999;
+    max-width: 100%;
+    padding: 15px 11px;
+    font-size: 14px;
+    font-family: 'opensans-semibold';
+    &:hover 
+    {
+      background-color: $bg-color;
+      color: #c6d8ea;
+      border: 2px solid #c6d8ea;
+      cursor: pointer
+    }
+   }
+   .list-active
+    {
+      background-color: $bg-color;
+      color: #c6d8ea;
+      border: 1px solid $bg-color;
+      cursor: pointer
+    }
+  }
+  .rate-indication
+  {
+   margin-bottom: 20px;
+   span 
+   {
+    margin-right: 25px;
+    font-family: 'opensans-semibold';
+    font-size: 29px
+   }
+   .five-rate
+   {
+    display: inline-block;
+    img 
+    {
+     margin-top: -10px;
+    }
+   }
+  }
+}
+/*End Clients-Reviews Section*/
+/* Info and Rated Section */ 
+.rated
+ {
+  font-family: 'opensans-rgular'; 
+  .fushy
+  {
+    color: #da3247;
+    font-family: 'opensans-semibold';
+    margin-left: 2px;
+    margin-right: 10px
+  } 
+ }
+ .info 
+ {
+   font-family: 'opensans-rgular';
+   color: #847e7e;
+   margin-top: 30px;
+   margin-bottom: 35px;
+ }
+ /* End Info and Rated Section */
+ /*Review Page review sction*/ 
+  .item
+  {
+     border: 2px solid #EEE;
+     padding: 5px 9px;
+     margin-bottom: 25px;
+     @media(max-width:767px)
+     {
+       text-align: center
+     }
+     h5 
+     {
+      font-family: 'proxima-semi-bold';
+      margin-top: -12px;
+      @media(max-width:767px)
+      {
+       text-align: center
+      }
+     }
+     .rate
+     {
+      display: inline;
+      text-align: left;
+      margin-right: 20%;
+     }
+     span:first-of-type 
+     {
+      display: inline;
+      text-align: right;
+      font-family: 'opensans-semibold';
+      color: #bbbbbb
+     }
+     h4 
+     {
+      font-family: 'proxima-bold';
+      font-size: 16px;
+      margin-top: 10px
+     }
+     p 
+     {
+      font-family: 'proxima-rgular';
+      font-size: 14px;
+      line-height: 1.4;
+      text-align: left;
+      color: #6b6b6b;
+      margin-bottom: 25px;
+      @media(max-width:767px)
+      {
+       text-align: center
+      }
+      @media(min-width:992px)and(max-width:1199px)
+      {
+        font-size: 13px
+      }
+     }
+     span:last-of-type
+     {
+      color: #847e7e;
+      font-family: 'proxima-semi-bold';
+     }
+  } 
+/*Review Page review sction*/ 
+/*Start Pagination Section*/
+.paginate
+{
+  .page-item
+  {
+    .page-link 
+    {
+      margin-right: 10px;
+      color: #999;
+      font-family: 'opensans-semibold';
+    }
+  }
+  .page-item.active 
+  {
+   .page-link
+    {
+    color: #FFF;
+    background-color: $main-color;
+    border-color: $main-color;
+    margin-right: 10px;
+    } 
+  }
+
+}
+/*End Pagination Section*/ 
+/*End Client & Reviews Page*/ 
+/*Start Medical Page*/ 
+.medical 
+{
+ /*Start Greeting Section*/
+.greeting
+{
+ background-image: url("../images/medical/banner.jpg");
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ height: 350px;
+ padding: 50px 0;
+ @media(min-width:480px)and(max-width:767px)
+ {
+  padding: 35px 0
+ }
+ h1 
+ {
+  font-family: 'popins-bold';
+  color: $bg-color;
+  text-align: left;
+  width: 50%;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  position: relative; 
+  @media(max-width:480px)
+  {
+    font-size: 25px;
+    width: 100%;
+    text-align: center
+  }
+  @media(min-width:480px)and(max-width:767px)
+  {
+    font-size: 26px
+  }
+  @media(min-width:768px)and(max-width:990px)
+  {
+    font-size: 30px
+  }
+  &::after
+  {
+   position:absolute;
+   bottom:-10px;
+   left: 0;
+   content: "";
+   width: 63px;
+   height: 4px;
+   background-color: $main-color;
+  }
+ }
+ p 
+ {
+  font-family: 'proxima-rgular';
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: left;
+  color: #111;
+  width: 40%;
+  @media(max-width:479px)
+  {
+    width: 98%
+  }
+  @media(min-width:480px)and(max-width:767px)
+  {
+    width: 90%
+  }
+  @media(min-width:768px)and(max-width:991px)
+  {
+    width: 60%
+  }
+ }
+}
+}
+/*Start Medical services*/ 
+.medical-services 
+{
+  padding: 45px 0;
+  .service 
+  {
+    h2 
+    {
+     text-align: left;
+     font-family: 'gothic-bold';
+     position: relative;
+     font-size: 26px;
+     font-weight: bold;
+     margin-bottom: 30px;
+     &::after
+     {
+      position:absolute;
+      bottom:-10px;
+      left: 0;
+      content: "";
+      width: 63px;
+      height: 4px;
+      background-color: $main-color;
+     }
+    }
+    .quick-brief 
+    {
+     font-family: 'gothic-bold';
+     color: #777
+    }
+    ul 
+    {
+      padding: 0;
+      margin: 0 0 35px 0;
+      li 
+      {
+        margin-bottom: 10px;
+        @media(max-width:479px)
+        {
+         margin-bottom: 14px;
+         font-size: 10px;
+        }
+        @media(min-width:480px)and(max-width:767px)
+        {
+         margin-bottom: 12px;
+         font-size: 12px;
+        }
+        @media(min-width:992px)and(max-width:1199px)
+        {
+         font-size: 14px;
+        }
+       .fa
+       {
+        color: $main-color;
+        margin-right: 10px;
+       }
+      }
+    }
+    .banner 
+    {
+     max-width:100%;
+     margin-bottom: 40px;
+    }
+    .describtion 
+    {
+     font-family: 'gothic-rgular';
+     line-height: 1.7;
+     font-size: 15px;
+    }
+  }
+  .service-box 
+ {
+  margin-bottom: 30px;
+
+  img 
+  {
+    float: left;
+    margin-right: 20px;
+  }
+  h3 
+  {
+    font-family: 'proxima-semi-bold';
+    font-size: 19px;
+  }
+  p 
+  {
+    font-family: 'proxima-rgular';
+    color: #847e7e;
+    line-height: 1.6;
+    font-size: 13px
+  }
+ }
+ .category
+ {
+   text-align: center;
+   margin-bottom: 25px;
+   @media(max-width:575px)
+   {
+    margin: auto
+   }
+   img 
+   {
+    max-width:100%;
+    margin-bottom: 10px
+   }
+   h4
+   {
+    font-size: 17px;
+    font-family: 'gothic-bold';
+    color: $main-color
+   }
+ }
+ .get-a-quote
+ {
+   background-color: #F6F6F6;
+  .quote 
+  {
+  margin-bottom: 15px;
+  background-color: #efefef;
+  padding: 10px 0;
+  color: #888;
+  font-family: 'gothic-bold';
+  }
+  .text
+  {
+  position: relative;
+  input[type="text"]
+  {
+   width: 80%;
+   height: 45px;
+   padding-left: 60px;
+   margin-bottom: 25px;
+   border: 1px solid #e4dddd;
+   @media(min-width:480px)and(max-width:767px)
+    {
+      width: 85%
+    }
+   @media(min-width:768px)and(max-width:991px)
+    {
+      width: 90%
+    }
+   }
+    &::before
+   {
+    position: absolute;
+    top: 13px;
+    left: 86px;
+    content: "";
+    height: 22px;
+    width: 2px;
+    background-color:#b2b5b7; 
+   }
+   img 
+   {
+     position: absolute;
+   }
+   .one 
+   {
+     position: absolute;
+     top: 11px;
+     left: 53px;
+   }
+   .two 
+   {
+     position: absolute;
+     top: 16px;
+     left: 53px;
+   }
+   .three 
+   {
+     position: absolute;
+     top: 13px;
+     left: 53px;
+   }
+  }
+  .idusrty
+  {
+    position: relative;
+    select 
+    {
+     width:80%;
+     height: 45px;
+     margin-bottom: 25px;
+     padding-left: 60px;
+     margin: 0 auto;
+     @media(min-width:480px)and(max-width:767px)
+    {
+      width: 85%
+    }
+     @media(min-width:768px)and(max-width:991px)
+    {
+      width: 90%;
+      margin: auto;
+      margin:5px auto 0;
+    }
+    }
+    &::before
+   {
+    position: absolute;
+    top: 13px;
+    left: 86px;
+    content: "";
+    height: 22px;
+    width: 2px;
+    background-color:#b2b5b7; 
+   }
+   img 
+   {
+    position: absolute;
+    top: 11px;
+    left: 53px;
+   }
+  }
+  .usage
+  {
+    position: relative;
+    select 
+    {
+     width:80%;
+     height: 45px;
+     margin-bottom: 25px;
+     padding-left:60px;
+     margin: 20px auto;
+     @media(min-width:480px)and(max-width:767px)
+    {
+      width: 85%
+    }
+    @media(min-width:768px)and(max-width:991px)
+    {
+     width: 90%;
+     margin:30px auto 20px;
+    }
+    }
+    &::before
+   {
+    position: absolute;
+    top: 11px;
+    left: 86px;
+    content: "";
+    height: 22px;
+    width: 2px;
+    background-color:#b2b5b7; 
+   }
+   img 
+   {
+    position: absolute;
+    top: 11px;
+    left: 53px;
+   }
+  }
+  button 
+  {
+   background-color: $main-color;
+   color: #FFF;
+   border: none;
+   text-transform: uppercase;
+   padding: 11px 40px;
+   font-family: 'gothic-bold';
+   margin-bottom: 20px;
+   cursor: pointer;
+   .fa
+   {margin-left: 10px}
+  } 
+ }
+}
+
+/*End Medical services*/
+/*End Medical Page*/ 
